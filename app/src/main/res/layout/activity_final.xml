@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="Pontuação Final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" android:textSize="25sp" android:textColor="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="20dp"/>
+    <TextView
+            android:text="Jogador 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/jogador1"/>
+    <TextView
+            android:text="Jogador 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/pontuacaoJ1" android:textSize="20sp"
+            android:textColor="@color/jogador2"/>
+    <TextView
+            android:text="Pontos Jogador 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pontuacaoJ1" android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:textSize="17sp" android:textColor="@android:color/black"/>
+    <TextView
+            android:text="Pontos Jogador 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pontuacaoJ2" android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:textSize="17sp" android:textColor="@android:color/black"/>
+    <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp" android:textStyle="bold" android:background="#DC143C"
+            android:layout_marginTop="50dp" app:layout_constraintTop_toBottomOf="@+id/pontuacaoJ2"/>
+    <Button
+            android:text="Novo Jogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNovoJogo"
+            app:layout_constraintEnd_toStartOf="@+id/btnCancelar" android:layout_marginEnd="40dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="100dp" android:textStyle="bold"
+            android:background="#00BFFF" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/pontuacaoJ2"/>
+</android.support.constraint.ConstraintLayout>
